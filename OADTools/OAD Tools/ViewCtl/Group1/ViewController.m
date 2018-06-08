@@ -43,6 +43,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self InitializeData];
+    NSLog(@"唯一识别符: %@",[[NSBundle mainBundle] bundleIdentifier]);
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
