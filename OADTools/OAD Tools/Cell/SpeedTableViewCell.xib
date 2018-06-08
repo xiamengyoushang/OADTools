@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SpeedTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setcellbg" translatesAutoresizingMaskIntoConstraints="NO" id="e9J-iC-hea">
+                        <rect key="frame" x="0.0" y="1" width="320" height="98"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setcellline" translatesAutoresizingMaskIntoConstraints="NO" id="k0g-gd-EWG">
+                        <rect key="frame" x="0.0" y="98.5" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="dLa-qU-PC0"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setcellline" translatesAutoresizingMaskIntoConstraints="NO" id="Taz-o4-bAM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="do6-lX-UIU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前升级速度(ms):" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lg6-to-ONk">
+                        <rect key="frame" x="10" y="16" width="125" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="125" id="7Je-GT-3fV"/>
+                            <constraint firstAttribute="height" constant="20" id="jWZ-gS-c1d"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6o-h2-wIN">
+                        <rect key="frame" x="145" y="16.5" width="40" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Of3-ax-9dM"/>
+                            <constraint firstAttribute="width" constant="40" id="Tmx-jk-f58"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YMx-sg-iLe">
+                        <rect key="frame" x="10" y="55.5" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="S5d-gc-r31"/>
+                            <constraint firstAttribute="height" constant="28" id="Yvv-kd-Ann"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="flashtool81"/>
+                        <connections>
+                            <action selector="clickSubSpeedBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wtq-uC-sRq"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jpi-zC-NN7">
+                        <rect key="frame" x="277" y="55.5" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="3LC-nZ-nGX"/>
+                            <constraint firstAttribute="height" constant="28" id="AYU-uc-fkn"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="flashtool80"/>
+                        <connections>
+                            <action selector="clickAddSpeedBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cum-ts-ahh"/>
+                        </connections>
+                    </button>
+                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="6" minValue="6" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="J23-ca-Eiu">
+                        <rect key="frame" x="56" y="54.5" width="203" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="v8m-yS-ALJ"/>
+                        </constraints>
+                        <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="maximumTrackTintColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <action selector="clickSpeedSlider:" destination="KGk-i7-Jjw" eventType="valueChanged" id="1Gf-2C-WLE"/>
+                        </connections>
+                    </slider>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Taz-o4-bAM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0mB-Sa-atV"/>
+                    <constraint firstAttribute="trailing" secondItem="Taz-o4-bAM" secondAttribute="trailing" id="10o-RJ-kbZ"/>
+                    <constraint firstItem="Jpi-zC-NN7" firstAttribute="centerY" secondItem="YMx-sg-iLe" secondAttribute="centerY" id="122-Kj-lZA"/>
+                    <constraint firstItem="k0g-gd-EWG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4Ga-9w-wyn"/>
+                    <constraint firstItem="s6o-h2-wIN" firstAttribute="leading" secondItem="lg6-to-ONk" secondAttribute="trailing" constant="10" id="4Gr-81-VdR"/>
+                    <constraint firstItem="s6o-h2-wIN" firstAttribute="centerY" secondItem="lg6-to-ONk" secondAttribute="centerY" id="5hp-Vb-XBA"/>
+                    <constraint firstAttribute="bottom" secondItem="k0g-gd-EWG" secondAttribute="bottom" id="5vu-uI-mmb"/>
+                    <constraint firstAttribute="trailing" secondItem="k0g-gd-EWG" secondAttribute="trailing" id="7Le-pX-qqa"/>
+                    <constraint firstItem="e9J-iC-hea" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BFl-88-oFv"/>
+                    <constraint firstItem="k0g-gd-EWG" firstAttribute="top" secondItem="YMx-sg-iLe" secondAttribute="bottom" constant="15" id="Kco-9a-8hE"/>
+                    <constraint firstItem="e9J-iC-hea" firstAttribute="top" secondItem="Taz-o4-bAM" secondAttribute="bottom" id="LqJ-4o-mDO"/>
+                    <constraint firstItem="YMx-sg-iLe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="OEZ-k0-9u0"/>
+                    <constraint firstAttribute="trailing" secondItem="e9J-iC-hea" secondAttribute="trailing" id="POT-2h-aCk"/>
+                    <constraint firstItem="Taz-o4-bAM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XZ8-s0-kSI"/>
+                    <constraint firstAttribute="trailing" secondItem="Jpi-zC-NN7" secondAttribute="trailing" constant="15" id="acX-zV-iaB"/>
+                    <constraint firstItem="k0g-gd-EWG" firstAttribute="top" secondItem="e9J-iC-hea" secondAttribute="bottom" id="dko-ID-pTh"/>
+                    <constraint firstItem="J23-ca-Eiu" firstAttribute="centerY" secondItem="YMx-sg-iLe" secondAttribute="centerY" id="r3o-Bl-Pdh"/>
+                    <constraint firstItem="lg6-to-ONk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="rwA-vM-J81"/>
+                    <constraint firstItem="J23-ca-Eiu" firstAttribute="leading" secondItem="YMx-sg-iLe" secondAttribute="trailing" constant="20" id="x0b-hW-to5"/>
+                    <constraint firstItem="lg6-to-ONk" firstAttribute="top" secondItem="Taz-o4-bAM" secondAttribute="bottom" constant="15" id="xre-b9-cyt"/>
+                    <constraint firstItem="Jpi-zC-NN7" firstAttribute="leading" secondItem="J23-ca-Eiu" secondAttribute="trailing" constant="20" id="z6S-aa-CEE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="speedLabel" destination="s6o-h2-wIN" id="c6e-RO-eaf"/>
+                <outlet property="speedSlider" destination="J23-ca-Eiu" id="3ei-6F-N8n"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="flashtool80" width="50" height="50"/>
+        <image name="flashtool81" width="50" height="50"/>
+        <image name="setcellbg" width="375" height="49"/>
+        <image name="setcellline" width="1" height="1"/>
+    </resources>
+</document>

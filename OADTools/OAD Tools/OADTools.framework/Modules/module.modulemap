@@ -1,0 +1,6 @@
+framework module OADTools {
+  umbrella header "OADTools.h"
+
+  export *
+  module * { export * }
+}
