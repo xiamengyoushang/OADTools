@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D85D122620CA891600AD1B0C /* OADTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85D122420CA891100AD1B0C /* OADTools.framework */; };
-		D85D122720CA891600AD1B0C /* OADTools.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D85D122420CA891100AD1B0C /* OADTools.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D85D122A20CA8DED00AD1B0C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D85D122920CA8DED00AD1B0C /* README.md */; };
+		D877F68A20D0AE2B0039E7C7 /* OADTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D877F68820D0AE1D0039E7C7 /* OADTools.framework */; };
+		D877F68B20D0AE2B0039E7C7 /* OADTools.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D877F68820D0AE1D0039E7C7 /* OADTools.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D8FD0BA320C8CB3C00213225 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FD0BA220C8CB3C00213225 /* AppDelegate.m */; };
 		D8FD0BA620C8CB3C00213225 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FD0BA520C8CB3C00213225 /* ViewController.m */; };
 		D8FD0BA920C8CB3C00213225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FD0BA720C8CB3C00213225 /* Main.storyboard */; };
@@ -74,7 +74,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D85D122720CA891600AD1B0C /* OADTools.framework in Embed Frameworks */,
+				D877F68B20D0AE2B0039E7C7 /* OADTools.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,8 +82,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D85D122420CA891100AD1B0C /* OADTools.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OADTools.framework; sourceTree = "<group>"; };
 		D85D122920CA8DED00AD1B0C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		D877F68820D0AE1D0039E7C7 /* OADTools.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OADTools.framework; sourceTree = "<group>"; };
 		D8FD0B9E20C8CB3C00213225 /* OAD Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OAD Tools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FD0BA120C8CB3C00213225 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D8FD0BA220C8CB3C00213225 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D85D122620CA891600AD1B0C /* OADTools.framework in Frameworks */,
+				D877F68A20D0AE2B0039E7C7 /* OADTools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +205,7 @@
 			children = (
 				D85D122920CA8DED00AD1B0C /* README.md */,
 				D8FD0C1820C8F37900213225 /* 测试二维码.png */,
-				D85D122420CA891100AD1B0C /* OADTools.framework */,
+				D877F68820D0AE1D0039E7C7 /* OADTools.framework */,
 				D8FD0BE020C8D46C00213225 /* Head */,
 				D8FD0BD320C8CDFD00213225 /* Cell */,
 				D8FD0C4920C9344100213225 /* UIView */,
@@ -715,6 +715,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/OAD\\ Tools",
 					"$(PROJECT_DIR)/OAD\\ Tools",
+					"$(PROJECT_DIR)/OAD\\ Tools",
+					"$(PROJECT_DIR)/OAD\\ Tools",
 				);
 				INFOPLIST_FILE = "OAD Tools/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -736,6 +738,8 @@
 				DEVELOPMENT_TEAM = VW6HNZLKMS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/OAD\\ Tools",
+					"$(PROJECT_DIR)/OAD\\ Tools",
 					"$(PROJECT_DIR)/OAD\\ Tools",
 					"$(PROJECT_DIR)/OAD\\ Tools",
 				);

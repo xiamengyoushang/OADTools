@@ -105,7 +105,7 @@
     if (_isUpdating == YES) {
         [self popViewControllerAndRefreshOADState:@"退出升级?" andType:YES];
     } else {
-        OAD_Response response = [_oadLibmanager startDeviceOADFirmwareUpgrade:_bluemanager.peripheral andSpeed:_bluemanager.speedOADIndex];
+        OAD_Response response = [_oadLibmanager startDeviceOADFirmwareUpgrade:_bluemanager.peripheral andSpeed:_bluemanager.speedOADIndex andVersionCheck:NO];
         switch (response) {
             case OAD_Noremal:
                 _isUpdating = YES;
@@ -121,6 +121,9 @@
                 break;
             case OAD_Request_Failed:
                 [self popViewControllerAndRefreshOADState:@"请求升级失败" andType:NO];
+                break;
+            case OAD_Latest_Version:
+                [self popViewControllerAndRefreshOADState:@"已是最新版本" andType:NO];
                 break;
         }
     }
