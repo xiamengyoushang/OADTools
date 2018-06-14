@@ -79,6 +79,7 @@
     [_bluemanager cancelToBluetooth];
     [_bluemanager.peripherals removeAllObjects];
     [_tableview reloadData];
+    [_bluemanager scanToBluetooth];
 }
 #pragma mark -NSTimer
 - (void)scanTimeRun{

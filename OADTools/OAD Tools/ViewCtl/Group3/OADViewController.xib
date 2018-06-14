@@ -42,14 +42,14 @@
                     </connections>
                 </segmentedControl>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZL-dK-27c" customClass="ProgressView">
-                    <rect key="frame" x="64" y="108" width="192" height="192"/>
+                    <rect key="frame" x="64" y="113" width="192" height="192"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="oZL-dK-27c" secondAttribute="height" multiplier="1:1" id="VHY-sR-e6s"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设备信息" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OpP-M3-UH4">
-                    <rect key="frame" x="40" y="340" width="240" height="21"/>
+                    <rect key="frame" x="40" y="335" width="240" height="21"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="240" id="Fk1-uN-42R"/>
                         <constraint firstAttribute="height" constant="21" id="iSb-40-xGP"/>
@@ -59,7 +59,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最新服务器版本: 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TME-f2-3O3">
-                    <rect key="frame" x="40" y="381" width="240" height="21"/>
+                    <rect key="frame" x="40" y="376" width="240" height="21"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="240" id="14A-MH-xpb"/>
                         <constraint firstAttribute="height" constant="21" id="JIy-vl-2gY"/>
@@ -69,7 +69,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knu-ql-Nz7">
-                    <rect key="frame" x="120" y="422" width="80" height="28"/>
+                    <rect key="frame" x="120" y="417" width="80" height="28"/>
                     <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="28" id="32g-iy-Wmu"/>
@@ -107,12 +107,12 @@
                 <constraint firstItem="QgK-jF-eZM" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="IFT-2c-gEj"/>
                 <constraint firstItem="oZL-dK-27c" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.6" id="KHo-yg-wsG"/>
                 <constraint firstItem="oZL-dK-27c" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="W7f-bK-5Ah"/>
-                <constraint firstItem="oZL-dK-27c" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-80" id="Wqf-3l-t60"/>
+                <constraint firstItem="oZL-dK-27c" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-75" id="Wqf-3l-t60"/>
                 <constraint firstItem="knu-ql-Nz7" firstAttribute="top" secondItem="TME-f2-3O3" secondAttribute="bottom" constant="20" id="X1m-Gs-jNS"/>
                 <constraint firstItem="OpP-M3-UH4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="af3-WW-xEg"/>
                 <constraint firstItem="Re0-Mp-lrX" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="ax2-oZ-f1A"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="QgK-jF-eZM" secondAttribute="trailing" constant="15" id="oFN-p8-IjQ"/>
-                <constraint firstItem="OpP-M3-UH4" firstAttribute="top" secondItem="oZL-dK-27c" secondAttribute="bottom" constant="40" id="sck-Ts-XWp"/>
+                <constraint firstItem="OpP-M3-UH4" firstAttribute="top" secondItem="oZL-dK-27c" secondAttribute="bottom" constant="30" id="sck-Ts-XWp"/>
                 <constraint firstItem="knu-ql-Nz7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tmZ-Eb-9QR"/>
                 <constraint firstItem="TME-f2-3O3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wx9-tV-e43"/>
             </constraints>

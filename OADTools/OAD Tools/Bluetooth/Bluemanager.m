@@ -55,7 +55,6 @@ static Bluemanager *bluemanager;
 - (void)cancelToBluetooth{
     if (_peripheral){
         [_centerManager cancelPeripheralConnection:_peripheral];
-        _peripheral = nil;
     }
 }
 #pragma mark -CBCentralManagerDelegate
